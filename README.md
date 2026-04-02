@@ -3,7 +3,7 @@
 Weekly notes tracking my journey from ECE graduate to ML practitioner.
 
 ## Goal
-Build the technical foundation to contribute meaningfully to AI research 
+Build the technical foundation to contribute meaningfully to AI research
 within 12 months — starting from zero, building with depth.
 
 ## Background
@@ -14,15 +14,17 @@ within 12 months — starting from zero, building with depth.
 ## Structure
 Each week has its own folder containing:
 - `notes.md` — what I studied, what confused me, what I understood
-- Any code written that week as standalone `.py` files
+- `code/` — any code written that week as standalone `.py` files
 
 ## Progress
+
 | Week | Topic | Status |
 |------|-------|--------|
-| Week 1 | Python basics + Git setup | 🔄 In progress |
+| Week 1 | Python basics + Git setup | ✅ Complete |
+| Week 2 | ATBS Part 2 — Regex, File I/O, Debugging, CSV/JSON | 🔄 In progress |
 
-## Resources I am following
-- Mathematics for ML — Deisenroth et al.
+## Resources
+- *Automate the Boring Stuff with Python* — Al Sweigart
+- *Mathematics for Machine Learning* — Deisenroth et al.
 - Andrew Ng ML Specialisation — Coursera
 - Neural Networks: Zero to Hero — Karpathy (YouTube)
-```
