@@ -21,7 +21,8 @@ Each week has its own folder containing:
 | Week | Topic | Status |
 |------|-------|--------|
 | Week 1 | Python basics + Git setup | ✅ Complete |
-| Week 2 | ATBS Part 2 — Regex, File I/O, Debugging, CSV/JSON | 🔄 In progress |
+| Week 2 | ATBS Part 2 — Regex, File I/O, Debugging, CSV/JSON | ✅ Complete |
+| Week 3 | NumPy — arrays, indexing, broadcasting, linear algebra | 🔄 In progress |
 
 ## Resources
 - *Automate the Boring Stuff with Python* — Al Sweigart
