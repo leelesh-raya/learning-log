@@ -3,7 +3,7 @@ import re, urllib.request
 url = "https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv"
 data = urllib.request.urlopen(url).read().decode("utf-8")
 
-print(data[:3715])
+#print(data[:3715])
 data=data.split('\n')
 pattern=r"(\d+.?\d?),(\d+.?\d?),(\d+.?\d?),(\d+.?\d?),(\w+)"
 result={}
@@ -39,3 +39,7 @@ for k,v in result.items():
 
 print(f"Species with largest size is {largest_species} with avg size({largest_size})")
 print(f"Species with lengthiest sepal is {largest_sepal} with length({largest_slength})")
+
+
+
+#Correction: Moved unnecessary avg calculations outside the first for loop
