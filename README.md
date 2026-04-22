@@ -22,10 +22,10 @@ Each week has its own folder containing:
 |------|-------|--------|
 | Week 1 | Python basics + Git setup | ✅ Complete |
 | Week 2 | ATBS Part 2 — Regex, File I/O, Debugging, CSV/JSON | ✅ Complete |
-| Week 3 | NumPy — arrays, indexing, broadcasting, linear algebra | 🔄 In progress |
+| Week 3 | OOP basics — classes, objects, inheritance, methods | 🔄 In progress |
+| Week 4 | NumPy — arrays, indexing, broadcasting, linear algebra | ⏳ Upcoming |
 
 ## Resources
 - *Automate the Boring Stuff with Python* — Al Sweigart
-- *Mathematics for Machine Learning* — Deisenroth et al.
-- Andrew Ng ML Specialisation — Coursera
-- Neural Networks: Zero to Hero — Karpathy (YouTube)
+- OOP — w3schools.com/python/python_classes.asp
+- NumPy — cs231n.github.io/python-numpy-tutorial
