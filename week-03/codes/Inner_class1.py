@@ -1,4 +1,5 @@
-'''Design a system where a Company has multiple Employees.
+'''
+Design a system where a Company has multiple Employees.
 Each employee should be able to display:
 
 “I work at <company_name>”
@@ -19,5 +20,5 @@ class Company:
 
 
 c=Company()
-e=c.employee(c, "mahi")
-e.display()
+e1=c.employee(c, "mahi")
+e1.display()
