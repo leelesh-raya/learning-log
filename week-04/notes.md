@@ -5,16 +5,23 @@
 ---
 
 ## What I studied
+- Why NumPy exists
+- NumPy arrays, indexing and slicing
+- Fancy and boolean indexing
 
 ## What was clear
+- Advantages of NumPy over Python lists
+- Boolean indexing
 
 ## What confused me
+- Strides
 
 ## Questions to follow up
 
 ## Code written
+- Boolean indexing
 
-## Now I can
+## What I can now do
 
 ## Final reflection
 
