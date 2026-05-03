@@ -1,13 +1,16 @@
-# Question: From array a remove all items present in array b
+# Question: Convert a 1D array to a 2D array with 2 rows
+# input: np.arange(10)
+# output array([[0, 1, 2, 3, 4],
+#               [5, 6, 7, 8, 9]])
 
-# Input: a = np.array([1,2,3,4,5])
-#        b = np.array([5,6,7,8,9])
-
-# Output: array([1,2,3,4])
+# Solution
 
 import numpy as np
-a = np.array([1,2,3,4,5])
-b = np.array([5,6,7,8,9])
-a[np.isin(a,b)]=None
-print(a[np.isin(a,b)])
-print(a)
+arr = np.arange(10)
+arr1=arr.reshape(2,5)
+print(arr1)
+
+# Another solution
+arr = np.arange(10)
+arr2=arr.reshape(2, -1)  # Setting to -1 automatically decides the number of cols
+print(arr2)
