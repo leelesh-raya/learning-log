@@ -8,9 +8,10 @@
 
 # Solution
 import numpy as np
-a = np.array([1,2,3,3,4,5])
-b = np.array([5,6,7,8,9])
-#out=np.unique(a[~np.isin(a,b)])
-out = np.union1d(b,a)
+
+a = np.array([1, 2, 3, 3, 4, 5])
+b = np.array([5, 6, 7, 8, 9])
+# out=np.unique(a[~np.isin(a,b)])
+out = np.setdiff1d(a,b)
 print(out)
 print(a)
