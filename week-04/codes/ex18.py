@@ -3,9 +3,10 @@
 # Input: rand_arr = np.random.random((5,3)
 
 import numpy as np
-arr = np.random.random((5,3))
-with np.printoptions(formatter={'float_kind': lambda x:f'{x:.3f}'}):
-    print(arr)
-rounded=np.round(arr, 3)
 
-print(rounded)
+arr = np.random.random((5, 3))
+with np.printoptions(formatter={"float_kind": lambda x: f"{x:.3f}"}):
+    print(arr)
+# rounded = np.round(arr, 3)
+# np.set_printoptions(precision=3)
+# they do NOT guarantee fixed 3 decimal places (trailing zeros may be hidden).

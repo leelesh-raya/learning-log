@@ -2,6 +2,7 @@
 
 
 import numpy as np
+
 rng = np.random.default_rng(42)
-arr = rng.uniform(5, 10, (5,3))
+arr = rng.uniform(5, 10, (5, 3))
 print(arr)

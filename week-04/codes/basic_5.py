@@ -11,7 +11,7 @@ import numpy as np
 arr = np.random.randint(10, 101, (6,5))
 print(arr)
 print(arr[:3])
-print(arr[:, -3:])
+print(arr[:, -2:])
 print(arr[2:4, 2:4])
 arr1=arr[arr>50]
 print(arr1)

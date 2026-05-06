@@ -13,6 +13,6 @@ a=np.array([1, 2, 3])
 b=np.array([4, 5, 6])
 
 
-a1=np.concatenate((a,b), axis=1 )
+a1=np.concatenate((a,b) )
 print(a1)
 

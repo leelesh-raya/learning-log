@@ -1,4 +1,4 @@
-#### 15. Create a 2d array with 1 on the border and 0 inside (★☆☆)
+#### Create a 2d array with 1 on the border and 0 inside (★☆☆)
 
 import numpy as np
 

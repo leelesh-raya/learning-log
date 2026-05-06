@@ -1,16 +1,6 @@
-# Question: Convert a 1D array to a 2D array with 2 rows
-# input: np.arange(10)
-# output array([[0, 1, 2, 3, 4],
-#               [5, 6, 7, 8, 9]])
-
-# Solution
+#### 2. Print the numpy version and the configuration (★☆☆)
 
 import numpy as np
-arr = np.arange(10)
-arr1=arr.reshape(2,5)
-print(arr1)
 
-# Another solution
-arr = np.arange(10)
-arr2=arr.reshape(2, -1)  # Setting to -1 automatically decides the number of cols
-print(arr2)
+print(np.__version__)
+np.show_config()

@@ -1,4 +1,4 @@
-#### 13. Create a 10x10 array with random values and find the minimum and maximum values (★☆☆)
+#### Create a 10x10 array with random values and find the minimum, maximum and mean values (★☆☆)
 
 
 import numpy as np

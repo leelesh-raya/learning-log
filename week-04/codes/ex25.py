@@ -1,4 +1,4 @@
-#### 16. How to add a border (filled with 0's) around an existing array? (★☆☆)
+#### How to add a border (filled with 0's) around an existing array? (★☆☆)
 
 
 import numpy as np

@@ -16,6 +16,12 @@
 - Array properties — size, itemsize, nbytes, max, min, mean
 - np.nonzero, np.pad, np.nan and its properties
 - zip, lambda and map functions
+- Structured dtypes — custom dtype, RGBA, field access
+- Matrix multiplication — matmul, @, dot and differences
+- np.sum with axis — behavior across dimensions
+- np.diag, np.indices, np.tile for pattern generation
+- Normalisation — z-score, min-max and why it matters
+- namespace pollution and dangers of from numpy import *
 
 ## What was clear
 - Advantages of NumPy over Python lists
@@ -33,6 +39,12 @@
 - Problems on join, repeat, tile, intersect1d, setdiff1d, where, swapaxes, flip, random number generation using randint, random, uniform and array formatting
 - Problems on array properties — size, itemsize, nbytes, max, min, mean
 - Problems on nonzero, pad and nan properties
+- Radar signal processor using structured dtype and seeded random generator
+- Checkerboard pattern using slicing and np.indices
+- Matrix multiplication using @ operator with manual verification
+- Diagonal matrix generation using np.diag
+- Boolean masking with in-place negation
+- Normalisation of random matrix using z-score
 
 ## What I can now do
 

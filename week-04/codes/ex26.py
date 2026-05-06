@@ -1,3 +1,5 @@
+#### What is the result of the following expression? (★☆☆)
+
 import numpy as np
 
 print(0 * np.nan)
