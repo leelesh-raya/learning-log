@@ -21,11 +21,17 @@
 - np.sum with axis — behavior across dimensions
 - np.diag, np.indices, np.tile for pattern generation
 - Normalisation — z-score, min-max and why it matters
-- namespace pollution and dangers of from numpy import *
+- Namespace pollution and dangers of from numpy import *
+- Scalar vs 1D array — np.array(0) vs np.array([0])
+- Integer vs float division by zero — nan, IEEE 754
+- nan to int conversion — irreversible data corruption
+- Bitwise operations — left shift, right shift
+- Rounding away from zero — copysign, ceil, floor, abs
 
 ## What was clear
 - Advantages of NumPy over Python lists
 - Boolean indexing
+- Always check for nan before converting types
 
 ## What confused me
 - Strides
@@ -45,6 +51,10 @@
 - Diagonal matrix generation using np.diag
 - Boolean masking with in-place negation
 - Normalisation of random matrix using z-score
+- Integer and float division by zero edge cases
+- nan to int to float conversion — silent corruption demonstration
+- Rounding away from zero using copysign, ceil and np.where
+- Bitwise operations on integer arrays
 
 ## What I can now do
 

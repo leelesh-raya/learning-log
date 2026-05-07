@@ -1,20 +1,32 @@
+# Build a structured NumPy array to store 10 radar signal samples,
+# each with amp (float32, 0-100), freq (float32, 0-1000) and
+# ch (ubyte, 0-255). Use a seeded generator.
+# Print all amplitudes, the third sample, and samples where
+# channel exceeds 50.
+
 import numpy as np
 
-color = np.dtype([("r", np.ubyte),
-                  ("g", np.ubyte),
-                  ("b", np.ubyte),
-                  ("a", np.ubyte)])
+rng = np.random.default_rng(42)
 
-# create a single color
-pixel = np.array((255, 128, 0, 255), dtype=color)
-print(pixel)              # (255, 128, 0, 255)
-print(pixel["r"])         # 255 — access by field name
-print(pixel["g"])         # 128
-print(pixel.itemsize)     # 4 bytes total
+signal = np.dtype([("amp", np.float32), ("freq", np.float32), ("ch", np.ubyte)])
 
-# create an image — array of pixels
-image = np.zeros((100, 100), dtype=color)
-image["r"] = 255          # set all red channels to 255
-image["a"] = 255          # set all alpha channels to 255
-print(image.shape)        # (100, 100)
-print(image.dtype)        # shows all four fields
+amp = (rng.random(10) * 100).astype(
+    np.float32
+)  # float32 saves memory over float64 on large data
+freq = (rng.random(10) * 1000).astype(
+    np.float32
+)  # float32 saves memory over float64 on large data
+ch = rng.integers(0, 255, (10)).astype(
+    np.ubyte
+)  # ubyte uses 1 byte vs 8 bytes per value
+
+arr = np.array(list(zip(amp, freq, ch)), dtype=signal)
+
+# task 1 — all amplitudes
+print(arr["amp"])
+
+# task 2 — third sample
+print(arr[2])
+
+# task 3 — samples where ch > 50
+print(arr[arr["ch"] > 50])
