@@ -23,15 +23,22 @@
 - Normalisation — z-score, min-max and why it matters
 - Namespace pollution and dangers of from numpy import *
 - Scalar vs 1D array — np.array(0) vs np.array([0])
-- Integer vs float division by zero — nan, IEEE 754
+- Integer vs float division by zero — nan, IEEE 754, silent corruption
 - nan to int conversion — irreversible data corruption
 - Bitwise operations — left shift, right shift
 - Rounding away from zero — copysign, ceil, floor, abs
+- np.seterr and np.errstate — controlling NumPy warnings
+- Complex numbers — np.emath, imaginary unit, sqrt(-1)
+- datetime64 and timedelta64 — date arithmetic, precision units
+- In-place operations — out parameter, memory efficiency
+- Extracting integer part — 5 methods and their differences
 
 ## What was clear
 - Advantages of NumPy over Python lists
 - Boolean indexing
 - Always check for nan before converting types
+- All numpy ufuncs support out
+- datetime64 is a point in time, timedelta64 is an amount of time — adding them gives a new point in time
 
 ## What confused me
 - Strides
@@ -55,6 +62,11 @@
 - nan to int to float conversion — silent corruption demonstration
 - Rounding away from zero using copysign, ceil and np.where
 - Bitwise operations on integer arrays
+- Date arithmetic using datetime64 and timedelta64
+- All dates in a given month using np.arange with datetime64
+- In-place computation using out parameter and ufuncs
+- Extracting integer part using 5 different methods
+- Warning suppression using np.seterr and np.errstate
 
 ## What I can now do
 

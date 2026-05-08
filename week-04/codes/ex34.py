@@ -19,4 +19,5 @@ print(1j*Z) # Legal. Multiplies each element with complex number (0+1j)
 print(Z/1/1) # Legal. Division by 1 returns same numbers in dtype float64.
 # [1. 2. 3. 4.]
 
-print(Z<Z>Z)
+print(Z<Z>Z) # Illegal.  
+# Raises ValueError: The truth value of an array with more than one element is ambiguous.
