@@ -32,6 +32,11 @@
 - datetime64 and timedelta64 — date arithmetic, precision units
 - In-place operations — out parameter, memory efficiency
 - Extracting integer part — 5 methods and their differences
+- Broadcasting — rules, np.newaxis, column vs row vectors
+- Generators and yield — lazy evaluation, memory efficiency
+- np.fromiter — building arrays from computed sequences
+- np.linspace — exact point count vs arange step size
+- In-place sort vs np.sort — modifies original vs returns new
 
 ## What was clear
 - Advantages of NumPy over Python lists
@@ -39,6 +44,8 @@
 - Always check for nan before converting types
 - All numpy ufuncs support out
 - datetime64 is a point in time, timedelta64 is an amount of time — adding them gives a new point in time
+- fromiter pulls computed values directly into an array — avoids intermediate list, halves peak memory usage
+- linspace guarantees exact count and avoids floating point accumulation errors unlike arange
 
 ## What confused me
 - Strides
@@ -67,10 +74,15 @@
 - In-place computation using out parameter and ufuncs
 - Extracting integer part using 5 different methods
 - Warning suppression using np.seterr and np.errstate
+- 5x5 matrix with row and column values using broadcasting, tile and repeat
+- Random vector generation using generators and np.fromiter
+- Evenly spaced vector excluding endpoints using np.linspace
+- Random vector sorting using in-place sort
 
 ## What I can now do
 
 ## Final reflection
 - Should rely on AI to assess solutions but use the internet for problems
+- AI adding unnecessary depth before the core answer strengthened concept understanding but slowed down learning 
 
 ## Things to improve
