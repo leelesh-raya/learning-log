@@ -1,0 +1,1 @@
+# Create a structured array with `x` and `y` coordinates covering the [0,1]x[0,1] area (★★☆)

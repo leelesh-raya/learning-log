@@ -37,6 +37,13 @@
 - np.fromiter — building arrays from computed sequences
 - np.linspace — exact point count vs arange step size
 - In-place sort vs np.sort — modifies original vs returns new
+- np.add.reduce — ufunc reduce, faster than np.sum for small repeated arrays
+- Array equality — np.array_equal, np.allclose, np.isclose and differences
+- allclose tolerance — atol, rtol and why both are needed
+- Read-only arrays — flags.writeable
+- Cartesian to polar conversion — arctan2, sqrt
+- np.maximum vs arr.max — element wise vs reduction
+- argmax — finding index of maximum value
 
 ## What was clear
 - Advantages of NumPy over Python lists
@@ -78,6 +85,11 @@
 - Random vector generation using generators and np.fromiter
 - Evenly spaced vector excluding endpoints using np.linspace
 - Random vector sorting using in-place sort
+- Small array sum using np.add.reduce vs np.sum
+- Array equality comparison using array_equal, allclose and isclose
+- Read-only array using flags.writeable
+- Cartesian to polar coordinate conversion using arctan2 and sqrt
+- Random vector maximum value replaced with zero using argmax
 
 ## What I can now do
 
