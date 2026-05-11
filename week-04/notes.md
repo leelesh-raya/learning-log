@@ -44,6 +44,11 @@
 - Cartesian to polar conversion — arctan2, sqrt
 - np.maximum vs arr.max — element wise vs reduction
 - argmax — finding index of maximum value
+- np.meshgrid — generating 2D coordinate grids
+- Structured array with inline dtype definition
+- Cauchy matrix — np.subtract.outer, np.linalg.det
+- np.iinfo and np.finfo — integer and float type limits, machine epsilon
+- Pairwise distances — outer product, broadcasting, scipy.spatial
 
 ## What was clear
 - Advantages of NumPy over Python lists
@@ -90,6 +95,10 @@
 - Read-only array using flags.writeable
 - Cartesian to polar coordinate conversion using arctan2 and sqrt
 - Random vector maximum value replaced with zero using argmax
+- Coordinate grid using meshgrid and structured dtype
+- Cauchy matrix using np.subtract.outer and np.linalg.det
+- Integer and float type limits using np.iinfo and np.finfo
+- Pairwise distances using outer product, broadcasting and scipy.spatial
 
 ## What I can now do
 

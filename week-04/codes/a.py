@@ -5,17 +5,8 @@ import numpy as np
 
 import numpy as np
 
-false=0
-true=0
-while True:
-    a = np.random.randint(0,2,4)
-    b = np.random.randint(0,2,4)
-    if np.array_equal(a,b) is True:
-        true+=1
-    else:   
-        false += 1
-    if true==10:
-        break
+import scipy.spatial
 
-print(false/true)
-
+Z = np.random.random((10,2))
+D = scipy.spatial.distance.cdist(Z,Z)
+print(D)

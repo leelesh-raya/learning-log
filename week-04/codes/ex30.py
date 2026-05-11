@@ -30,3 +30,4 @@ print(arr[2])
 
 # task 3 — samples where ch > 50
 print(arr[arr["ch"] > 50])
+print(arr)
