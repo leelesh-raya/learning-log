@@ -2,9 +2,11 @@
 
 import numpy as np
 
-x=np.arange(9)
-y=x+0.5 # 0.5 is just a clean, arbitrary choice to ensure no division by zero occurs.
+x = np.arange(9)
+y = (
+    x + 0.5
+)  # 0.5 is just a clean, arbitrary choice to ensure no division by zero occurs.
 
-C = 1/np.subtract.outer(x,y)
+C = 1 / np.subtract.outer(x, y)  # .outer takes every possible pair
 
-print(np.linalg.det(C))
+print(np.linalg.det(C))  # Determinant of C

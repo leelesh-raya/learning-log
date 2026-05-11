@@ -8,4 +8,4 @@ a = np.linspace(0,1,10)
 b = np.linspace(0,1,10)
 arr['x'],arr['y']=np.meshgrid(a,b)
 
-print(arr[0,1]['x':'y'])
+print(arr[1,0])

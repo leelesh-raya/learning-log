@@ -10,6 +10,5 @@ arr = np.zeros(
     ],
 )
 
-arr['color']['r']=32
-print(arr[0]['position'])
-print(arr)
+arr["color"]["r"] = 32
+print(arr[0]["position"])
