@@ -6,3 +6,8 @@ arr = np.random.rand(10).astype(float)
 z = arr.view(int)
 z[:] = arr
 print(z)
+
+
+
+# view: Points to the same address but changes the data type "label."
+# [:]: Forces NumPy to refill existing memory instead of creating a new array.
