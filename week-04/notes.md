@@ -49,6 +49,9 @@
 - Cauchy matrix — np.subtract.outer, np.linalg.det
 - np.iinfo and np.finfo — integer and float type limits, machine epsilon
 - Pairwise distances — outer product, broadcasting, scipy.spatial
+- In-place dtype conversion — view, shared memory reinterpretation
+- np.genfromtxt — reading files with missing values, filling_values
+- np.ndenumerate and np.ndindex — enumerate equivalent for nd arrays
 
 ## What was clear
 - Advantages of NumPy over Python lists
@@ -99,6 +102,9 @@
 - Cauchy matrix using np.subtract.outer and np.linalg.det
 - Integer and float type limits using np.iinfo and np.finfo
 - Pairwise distances using outer product, broadcasting and scipy.spatial
+- Float32 to int32 in-place conversion using view
+- Reading file with missing values using np.genfromtxt
+- Array enumeration using ndenumerate and ndindex
 
 ## What I can now do
 

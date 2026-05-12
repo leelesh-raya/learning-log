@@ -3,7 +3,7 @@
 
 import numpy as np
 
-arr = np.random.random((100,2))
+arr = np.random.random((10,2))
 
 x,y = arr[:,0],arr[:,1]
 x_dif = np.subtract.outer(x,x)

@@ -1,0 +1,16 @@
+# how to read the following file? (★★☆)
+
+'''     1, 2, 3, 4, 5
+        6,  ,  , 7, 8
+         ,  , 9,10,11       '''
+
+import numpy as np
+from io import StringIO
+
+fake_file = StringIO('''     1, 2, 3, 4, 5
+        6,  ,, 7, 8
+                     
+         ,  , 9,10,11       ''')
+
+z = np.genfromtxt(fake_file, delimiter=',', dtype='int', filling_values = 0)
+print(z)

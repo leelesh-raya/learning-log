@@ -5,8 +5,5 @@ import numpy as np
 
 import numpy as np
 
-import scipy.spatial
-
-Z = np.random.random((10,2))
-D = scipy.spatial.distance.cdist(Z,Z)
-print(D)
+print(np.hypot(4,6)-np.hypot(2,4))
+print(np.hypot((4-2),(6-4)))
