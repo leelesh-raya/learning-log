@@ -1,6 +1,6 @@
 # Week 4 Notes — NumPy
 **Date started:** 24-04-2026  
-**Date completed:**
+**Date completed:** 26-05-2026  
 
 ---
 
@@ -52,6 +52,7 @@
 - In-place dtype conversion — view, shared memory reinterpretation
 - np.genfromtxt — reading files with missing values, filling_values
 - np.ndenumerate and np.ndindex — enumerate equivalent for nd arrays
+- np.exp
 
 ## What was clear
 - Advantages of NumPy over Python lists
@@ -65,8 +66,6 @@
 ## What confused me
 - Strides
 - Using axis argument with concatenate and stack
-
-## Questions to follow up
 
 ## Code written
 - Boolean indexing
@@ -105,11 +104,21 @@
 - Float32 to int32 in-place conversion using view
 - Reading file with missing values using np.genfromtxt
 - Array enumeration using ndenumerate and ndindex
+- Generate a generic 2D Gaussian-like array 
 
 ## What I can now do
+- Manipulate arrays confidently — indexing, slicing, reshaping, broadcasting
+- Implement matrix operations and verify results manually
+- Handle edge cases — nan, integer overflow, silent type corruption
+- Build structured arrays for real data like signals and coordinates
+- Normalise data using z-score and min-max
+- Read files with missing values and handle them correctly
+- Write memory-efficient code using generators, out parameter and views
 
 ## Final reflection
 - Should rely on AI to assess solutions but use the internet for problems
 - AI adding unnecessary depth before the core answer strengthened concept understanding but slowed down learning 
 
 ## Things to improve
+- Get comfortable with axis argument in stack and concatenate
+- Write cleaner, more concise solutions — some code is longer than needed
