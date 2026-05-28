@@ -21,8 +21,10 @@ df = pd.merge(
 )
 print(df)
 
+# Find customers who never ordered anything
 non_buyers = df[df["_merge"] == "left_only"].drop(columns="_merge")
 print(non_buyers)
 
+# Find orders whose customer does not exist in customers table
 orders_without_customer = df[df["_merge"] == "right_only"].drop(columns="_merge")
 print(orders_without_customer)

@@ -10,5 +10,8 @@ old = pd.DataFrame({
     'salary': [45000, 55000]
 })
 
+
+# Use suffixes when both tables contain same column names
+# that are NOT used for matching
 df = pd.merge(current, old, on='id', suffixes=('_current', '_old'))
 print(df)

@@ -1,5 +1,7 @@
 import pandas as pd
 
+# Use when the indexes themselves represent the relationship between tables
+
 students = pd.DataFrame({
     'name': ['Ram', 'Sam']
 })

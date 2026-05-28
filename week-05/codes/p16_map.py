@@ -8,11 +8,9 @@ df3 = df2.map(lambda x: 'taller' if x>6 else 'shorter')
 print(df3.to_string())
 
 
-
-
+# Using dictionaries
 df2 =  df1['Legendary']
 
-# Using dictionaries
 df4 = df2.map({
     1 : True,
     0 : False
