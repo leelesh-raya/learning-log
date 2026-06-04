@@ -13,7 +13,7 @@ departments = pd.DataFrame(
 )
 
 # on specifies which common column to refer while macthing
-# Not using on by default refers all common column for matching
+# Not using on by default refers all common columns for matching
 df = pd.merge(employees, departments, on="dept_id")
 print(df)
 

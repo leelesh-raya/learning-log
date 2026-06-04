@@ -2,6 +2,7 @@ import pandas as pd
 
 df1 = pd.read_csv('pokemon.csv', index_col='Name')
 
+# create a Series 
 df2 =  df1['Height']
 
 df3 = df2.map(lambda x: 'taller' if x>6 else 'shorter')

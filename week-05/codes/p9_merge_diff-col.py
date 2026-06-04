@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Used when matching columns have different names ('emp_id'='worker_id')
+# Used when columns used for matching have different names ('emp_id'='worker_id')
 employees = pd.DataFrame({
     'emp_id': [1, 2],
     'name': ['Ram', 'Sam']
