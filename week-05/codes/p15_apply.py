@@ -8,7 +8,7 @@ df = pd.DataFrame({
 def plus2(row):
     r = row+2
     return r
-
+    
 #apply() is used to apply a custom function to each element of a Series or to each row/column of a DataFrame.
 
 print(df.apply(sum)) # across rows
